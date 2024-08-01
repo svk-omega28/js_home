@@ -1,6 +1,7 @@
 "use strict";
 
 
+
 /* Task #1 Start */
 let admin, name;
 name = "John";
@@ -15,18 +16,9 @@ let currentUserName = "John";
 /* Task #2 End */
 
 /* Task #3 Start */
-let one = "1";
-let two = "2";
-let three = "3";
-let four = "4";
-let five = "5";
-let six = "6";
-let seven = "7";
-let eight = "8";
-let nine = "9";
-let ten = "10";
 
+let userAge = "10" + 10 ;
 
-console.log(ten)
+console.log(userAge);
 
 /* Task #3 End */
