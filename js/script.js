@@ -41,3 +41,11 @@ const isAdult = numericAge >= 18;
 console.log(isAdult);
 
 /* Task #5 End */
+
+
+
+/*
+Проверка теста в ДЗ
+console.log(typeof NaN);
+*/
+
