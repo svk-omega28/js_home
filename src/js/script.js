@@ -1,20 +1,22 @@
 'use strict';
 
+const userName = prompt('Как вас зовут?');
+
 function padString(str, length, char = ' ', addToLeft = false) {
   if (typeof str !== 'string') {
-    return 'Error: The first argument must be a string.';
+    return 'Должна быть строка';
   }
 
   if (typeof length !== 'number') {
-    return 'Error: The second argument must be a number.';
+    return 'Должно быть число';
   }
 
   if (typeof char !== 'string' || char.length !== 1) {
-    return 'Error: The third argument must be a single character string.';
+    return 'Должна быть строка из одного символа';
   }
 
   if (typeof addToLeft !== 'boolean') {
-    return 'Error: The fourth argument must be a boolean.';
+    return 'Должен быть boolean';
   }
 
   if (str.length >= length) {
@@ -30,7 +32,7 @@ function padString(str, length, char = ' ', addToLeft = false) {
   return str + padding;
 }
 
-console.log(padString('hello', 8, '*'));
-console.log(padString('hello', 6, '*', false));
-console.log(padString('hello', 6, '*', true));
-console.log(padString('hello', 2)); // Виведе: he
+console.log(`${userName}, ваш результат: ${padString('hello', 8, '*')}`);
+console.log(`${userName}, ваш результат: ${padString('hello', 6, '*', false)}`);
+console.log(`${userName}, ваш результат: ${padString('hello', 6, '*', true)}`);
+console.log(`${userName}, ваш результат: ${padString('hello', 2)}`); // Виведе: he
