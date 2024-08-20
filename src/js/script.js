@@ -1,5 +1,6 @@
 'use strict';
 
+const userName = prompt('Как вас зовут?');
 function generateKey(lenght, characters) {
   let key = '';
   const charactersLength = characters.length;
@@ -14,4 +15,4 @@ function generateKey(lenght, characters) {
 
 const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 const key = generateKey(16, characters);
-console.log(key);
+console.log(`${userName}, вот вам ключ для активации:  ${key}`);
