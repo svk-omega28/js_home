@@ -13,5 +13,6 @@ let userInput = parseInt(prompt('Введите число от 1 до 10, ко�
 while (isNaN(userInput) || userInput < 1 || userInput > 10) {
   userInput = parseInt(prompt('Неправильне значення! Введіть число від 1 до 10:'), 10);
 }
+
 removeElement(array, userInput);
 console.log(array, `Пользователь ввёл число ${userInput}`);
