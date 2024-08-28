@@ -40,13 +40,13 @@ function doMath(x, znak, y) {
     case '^':
       return x ** y;
     default:
-      return 'Невідома операція';
+      return 'Неизвестная операция';
   }
 }
 
-const x = parseFloat(prompt('Введіть перше число:'));
-const znak = prompt('Введіть математичний знак (+, -, *, /, %, ^):');
-const y = parseFloat(prompt('Введіть друге число:'));
+const x = parseFloat(prompt('Введите первое число:'));
+const znak = prompt('Введите знак из перечисленного (+, -, *, /, %, ^):');
+const y = parseFloat(prompt('Введите второе число:'));
 
 const result = doMath(x, znak, y);
 alert(`Первое число: ${x}\nМатематичний знак: ${znak}\nВторое число: ${y}\nРезультат: ${result}`);
@@ -54,18 +54,18 @@ alert(`Первое число: ${x}\nМатематичний знак: ${znak}
 
 /* // Task 3 Start
 function create2DArray() {
-  let rows = parseInt(prompt('Введіть кількість рядків у масиві (не більше 3):'), 10);
+  let rows = parseInt(prompt('Введите количество рядок в массиве (не больше 10):'), 10);
 
-  while (isNaN(rows) || rows <= 0 || rows > 3) {
-    alert('Будь ласка, введіть коректну кількість рядків (від 1 до 3).');
-    rows = parseInt(prompt('Введіть кількість рядків у масиві (не більше 3):'), 10);
+  while (isNaN(rows) || rows <= 0 || rows > 10) {
+    alert('Введите корректное знаачение рядков (от 1 до 10).');
+    rows = parseInt(prompt('Введите количество рядок в массиме (не больше 10):'), 10);
   }
 
-  let columns = parseInt(prompt('Введіть кількість колонок у кожному рядку (не більше 3):'), 10);
+  let columns = parseInt(prompt('Введите количество колонок в каждом ряду (не больше 2):'), 10);
 
-  while (isNaN(columns) || columns <= 0 || columns > 3) {
-    alert('Будь ласка, введіть коректну кількість колонок. (від 1 до 3)');
-    columns = parseInt(prompt('Введіть кількість колонок у кожному рядку (не більше 3):'), 10);
+  while (isNaN(columns) || columns <= 0 || columns > 2) {
+    alert('Введите корректное знаачение колонок (от 1 до 2)');
+    columns = parseInt(prompt('Введите количество колонок в каждом ряду (не больше 2):'), 10);
   }
 
   const array = [];
@@ -74,7 +74,7 @@ function create2DArray() {
     array[i] = [];
 
     for (let j = 0; j < columns; j++) {
-      array[i][j] = prompt(`Введіть значення для елемента [${i}][${j}]:`);
+      array[i][j] = prompt(`Введите значение для элементов:\n\n Номер строки > [${i}] <\n Значение колонки > [${j}] < :`);
     }
   }
 
