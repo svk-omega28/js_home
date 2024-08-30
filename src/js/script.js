@@ -35,4 +35,4 @@ function padString(str, length, char = ' ', addToLeft = false) {
 console.log(`${userName}, ваш результат: ${padString('hello', 8, '*')}`);
 console.log(`${userName}, ваш результат: ${padString('hello', 6, '*', false)}`);
 console.log(`${userName}, ваш результат: ${padString('hello', 6, '*', true)}`);
-console.log(`${userName}, ваш результат: ${padString('hello', 2)}`); // Виведе: he
+console.log(`${userName}, ваш результат: ${padString('hello', 2)}`); 
