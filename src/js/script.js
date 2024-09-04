@@ -12,7 +12,6 @@ const mainFunction = (callback) => {
   const factor = parseFloat(prompt('Введите степени'));
 
   callback(number, factor);
-  console.log(`Пользователь ввел число > ${number} < - Пользователь ввел степень > ${factor} <`);
 };
 
 mainFunction(exponentiation);
