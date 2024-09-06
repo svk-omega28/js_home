@@ -58,7 +58,8 @@ const users = [
 ];
 
 const phoneNumbers = users
-  .filter(({ balance }) => +balance.replace(/[^0-9-]+/g, '') > 2000)
+
+  .filter(({ balance }) => +balance.replace(/[^0-9.-]+/g, '') > 2000)
   .map(({ phone }) => phone);
 
 console.log('телефонные номера с балансом больше 2000');
