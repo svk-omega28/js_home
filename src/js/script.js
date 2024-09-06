@@ -65,6 +65,6 @@ console.log('телефонные номера с балансом больше 
 console.log(phoneNumbers);
 
 const totalBalance = users
-  .reduce((sum, user) => sum + parseFloat(user.balance.replace(/[^0-9.-]+/g, '')), 0);
+  .reduce((sum, user) => sum + +(user.balance.replace(/[^0-9.-]+/g, '')), 0);
 
 console.log(`сумма всех балансов: $${totalBalance.toFixed(2)}`);
