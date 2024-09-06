@@ -31,7 +31,7 @@ const users = [
   {
     index: 3,
     isActive: true,
-    balance: '$1,934.58',
+    balance: '$1,934.68',
     name: 'Burns Poole',
     gender: 'male',
     phone: '+1 (885) 559-3422',
