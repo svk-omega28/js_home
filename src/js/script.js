@@ -1,4 +1,3 @@
-/*
 'use strict';
 
 const constNumber2 = 666;
@@ -32,4 +31,4 @@ demoVariableScopes();
 // varNumber - hoisting поднятие переменных
 
 // более подробно читал вот тут https://doka.guide/js/closures/
-*/
+
