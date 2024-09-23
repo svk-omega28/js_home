@@ -3,7 +3,8 @@
 Це ladder (сходи) – об'єкт, який дозволяє підніматися вгору та спускатися:
 
 
-```let ladder = {
+```
+let ladder = {
 step: 0,
 up: function () {
 this.step++;
