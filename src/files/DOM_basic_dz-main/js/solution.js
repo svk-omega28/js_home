@@ -40,7 +40,7 @@ const addMyNameAttribute = (name) => {
   const firstListItem = document.querySelector('ul li');
   firstListItem.setAttribute('data-my-name', name);
 };
-addMyNameAttribute('Влад');
+addMyNameAttribute('vlad');
 
 const removeDogTailAttribute = () => {
   const ul = document.querySelector('ul');
