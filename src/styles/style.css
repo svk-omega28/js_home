@@ -1,3 +1,20 @@
+.delete-button,
+.edit-button {
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+    display: inline-block;
+}
+
+.taskWrapper:hover .delete-button,
+.taskWrapper:hover .edit-button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .taskWrapper {
     background-color: #ccc;
     border-radius: 10px;
@@ -6,34 +23,13 @@
     margin-bottom: 20px;
 }
 
+.taskDescription {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 .taskHeading {
     font-size: 20px;
     margin-bottom: 15px;
-}
-
-.taskDescription {
-    font-size: 16px;
-}
-
-.delete-button {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.task-container:hover .delete-button {
-    opacity: 1;
-}
-
-.taskWrapper {
-    padding: 10px;
-}
-
-.taskHeading {
     font-weight: bold;
-    font-size: 18px;
-}
-
-.taskDescription {
-    margin-top: 10px;
-    font-size: 14px;
 }
