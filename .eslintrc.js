@@ -5,5 +5,7 @@ module.exports = {
     'no-undef': 'off',
     'no-alert': 'off',
     'no-console': 'off',
+    'set': 'off',
+    'get': 'off',
   },
 };
