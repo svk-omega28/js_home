@@ -2,7 +2,6 @@
 
 import product from './product.js';
 
-// Пример установки значений
 product.name = 'Молоко';
 product.quantity = 30;
 product.price = 25;
