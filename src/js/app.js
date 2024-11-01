@@ -6,8 +6,8 @@ import { absent } from './absent.js';
 import { mark } from './mark.js';
 import { summary } from './summary.js';
 
-const student1 = new Student('Иван', 'Петров', 2003);
-const student2 = new Student('Мария', 'Иванова', 2002);
+const student1 = new Student('Владислав', 'Никишин', 1996);
+const student2 = new Student('Владимир', 'Шайтан', 1996);
 
 present(student1);
 absent(student1);
