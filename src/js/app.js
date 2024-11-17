@@ -16,7 +16,7 @@ try {
   premiumService1.addPremiumEmail('vip4@premium.com');
   premiumService1.addPremiumEmail('vip5@premium.com');
 
-  premiumService1.addPremiumEmail('vip6@premium.com');
+  // premiumService1.addPremiumEmail('vip6@premium.com');
 } catch (error) {
   console.error(error.message);
   renderError(error.message);
