@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.logs {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.logs h2 {
+    text-align: center;
+    color: #333;
+}
+
+.log-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+.log-item:nth-child(even) {
+    background-color: #e7e7e7;
+}
+
+.errors {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffecec;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #900;
+    display: none;
+}
+
+.errors h2 {
+    text-align: center;
+    color: #a00;
+}
+
+.error-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffdddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #a00;
+}
+
+.errors.show {
+    display: block;
+}
