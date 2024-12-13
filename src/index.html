@@ -3,8 +3,32 @@
     <head>
         <meta charset="UTF-8" />
         <title>Title</title>
+        <link rel="stylesheet" href="styles/style.css" />
     </head>
     <body>
-        <script src="js/script.js"></script>
+        <div class="container">
+            <h1>Отримати погоду</h1>
+            <input type="text" id="city" placeholder="Введіть місто" />
+            <button id="getWeather">Получить погоду</button>
+
+            <div id="weatherInfo">
+                <p><strong>Температура:</strong> <span id="temp"></span> °C</p>
+                <p>
+                    <strong>Давление:</strong> <span id="pressure"></span> hPa
+                </p>
+                <p><strong>Описание:</strong> <span id="description"></span></p>
+                <p><strong>Влажность:</strong> <span id="humidity"></span> %</p>
+                <p>
+                    <strong>Скорость ветра:</strong>
+                    <span id="speed"></span> м/с
+                </p>
+                <p>
+                    <strong>Направление ветра:</strong>
+                    <span id="deg"></span> градусов
+                </p>
+                <img id="weatherIcon" src="" alt="weather icon" />
+            </div>
+        </div>
+        <script type="module" src="./js/app.js"></script>
     </body>
 </html>

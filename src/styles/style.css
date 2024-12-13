@@ -1,0 +1,76 @@
+/* Загальні стилі для всього документа */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Контейнер для форми та результатів */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+/* Стилі для заголовка */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Поле введення для міста */
+input[type='text'] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Кнопка для отримання погоди */
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Зміна кольору кнопки при наведенні */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Стилі для інформації про погоду */
+#weatherInfo {
+    margin-top: 20px;
+    display: none; /* Спочатку ховаємо інформацію */
+    text-align: left;
+}
+
+/* Стилі для кожного абзацу з інформацією */
+#weatherInfo p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Зображення значка погоди */
+#weatherIcon {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
