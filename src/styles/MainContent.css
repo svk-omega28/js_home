@@ -1,0 +1,21 @@
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #cacaca;
+}
+
+.content-image {
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+p {
+    color: #444;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: left;
+    margin: 15px;
+}
