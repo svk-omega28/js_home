@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
-import TodoList from './components/TodoList';
-import AddTodo from './components/AddTodo';
-import Footer from './components/Footer';
+import TodoList from './components/TodoList.jsx';
+import AddTodo from './components/AddTodo.jsx';
+import Footer from './components/Footer.jsx';
 import './styles/Reset.scss';
 import './styles/App.scss';
 
-
 const App = () => {
-    const [todos, setTodos] = useState([
-        { id: 1, text: 'First Task', completed: false },
-        { id: 2, text: 'Second Task', completed: true },
-    ]);
+    const [todos, setTodos] = useState([]);
 
     const toggleTodo = (id) => {
         setTodos(todos.map(todo =>
@@ -23,14 +19,19 @@ const App = () => {
         setTodos([...todos, newTodo]);
     };
 
+    const activeTodosCount = todos.filter(todo => !todo.completed).length;
+
     return (
         <div className="app">
             <h1>TODO List</h1>
+            <p>Активных задач: {activeTodosCount}</p> {/* Счётчик активных задач */}
             <TodoList todos={todos} toggleTodo={toggleTodo} />
             <AddTodo addTodo={addTodo} />
             <Footer />
         </div>
     );
+
+
 };
 
 export default App;
