@@ -1,46 +1,34 @@
-import React, { useState } from "react";
-import EmojiList from "./EmojiList";
-import "./styles/Apps.scss";
+import React, { useState } from 'react';
+import TodoList from './components/TodoList';
+import AddTodo from './components/AddTodo';
+import Footer from './components/Footer';
+import './styles/Reset.scss';
+import './styles/App.scss';
+
 
 const App = () => {
-    const [votes, setVotes] = useState({
-        "😊": 0,
-        "😂": 0,
-        "😍": 0,
-        "🤔": 0,
-        "😎": 0,
-    });
+    const [todos, setTodos] = useState([
+        { id: 1, text: 'First Task', completed: false },
+        { id: 2, text: 'Second Task', completed: true },
+    ]);
 
-    const [winner, setWinner] = useState(null);
-
-    const handleVote = (emoji) => {
-        setVotes((prevVotes) => ({
-            ...prevVotes,
-            [emoji]: prevVotes[emoji] + 1,
-        }));
+    const toggleTodo = (id) => {
+        setTodos(todos.map(todo =>
+            todo.id === id ? { ...todo, completed: !todo.completed } : todo
+        ));
     };
 
-    const showResults = () => {
-        const maxVotes = Math.max(...Object.values(votes));
-        const winnerEmoji = Object.keys(votes).find(
-            (emoji) => votes[emoji] === maxVotes
-        );
-        setWinner(winnerEmoji);
+    const addTodo = (text) => {
+        const newTodo = { id: Date.now(), text, completed: false };
+        setTodos([...todos, newTodo]);
     };
 
     return (
         <div className="app">
-            <h1>Emoji Voting App</h1>
-            <EmojiList votes={votes} onVote={handleVote} />
-            <button className="show-results" onClick={showResults}>
-                Show Results
-            </button>
-            {winner && (
-                <div className="winner">
-                    <h2>Winner:</h2>
-                    <span>{winner}</span>
-                </div>
-            )}
+            <h1>TODO List</h1>
+            <TodoList todos={todos} toggleTodo={toggleTodo} />
+            <AddTodo addTodo={addTodo} />
+            <Footer />
         </div>
     );
 };

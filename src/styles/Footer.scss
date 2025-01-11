@@ -1,0 +1,53 @@
+.footer {
+  background-color: transparent ;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    .contact-info {
+      font-size: 18px;
+
+      p {
+        margin: 15px 5px;
+
+
+        a {
+          color: #4aa3ff;
+          text-decoration: none;
+          margin-left: 5px;
+          transition: color 0.3s;
+          font-weight: bold;
+
+          &:hover {
+            color: #82caff;
+          }
+        }
+      }
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+
+      a {
+        display: inline-block;
+
+        img {
+          width: 80px;
+          height: 80px;
+          transition: transform 0.3s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
