@@ -24,7 +24,7 @@ const App = () => {
     return (
         <div className="app">
             <h1>TODO List</h1>
-            <p>Активных задач: {activeTodosCount}</p> {/* Счётчик активных задач */}
+            <p>Активных задач: {activeTodosCount}</p>
             <TodoList todos={todos} toggleTodo={toggleTodo} />
             <AddTodo addTodo={addTodo} />
             <Footer />
