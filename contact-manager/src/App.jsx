@@ -11,13 +11,11 @@ const App = () => {
     };
 
     const handleSaveContact = (newContact) => {
-        // Добавление нового контакта в список
         setContacts([...contacts, { ...newContact, id: Date.now() }]);
         setShowForm(false);
     };
 
     const handleDeleteContact = (id) => {
-        // Удаление контакта из списка
         setContacts(contacts.filter((contact) => contact.id !== id));
     };
 
